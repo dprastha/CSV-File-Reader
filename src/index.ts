@@ -1,7 +1,7 @@
-import { CsvFileReader } from './CsvFileReader';
 import { MatchResultEnum } from './utils/MatchResultEnum';
+import { MatchReader } from './MatchReader';
 
-const reader = new CsvFileReader('csv/football.csv');
+const reader = new MatchReader('csv/football.csv');
 reader.read();
 
 let manUnitedWins = 0;
